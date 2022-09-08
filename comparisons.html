@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude</title>
+    <title>Comparisons</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg justify-content-center navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Latitude Stats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -30,6 +28,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!-- <span class="dropdown-item-text">Plots</span> -->
+                        <a class="dropdown-item" href="index.html">Home</a>
                         <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                         <a class="dropdown-item" href="humid.html">Humid</a>
                         <a class="dropdown-item" href="temperature.html">Temp</a>
@@ -37,7 +36,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    <a class="nav-link" href="#">Comparisons</a>
                 </li>
                 <li class="nav=item">
                     <a class="nav-link" href="resources/cities.html">Data</a>
@@ -57,40 +56,51 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
+            </div>
+        </div>
     </nav>
 
-    </div>
-    <div class="row content">
-        <div class="col-sm-12 col-md-8 col-lg-8">
-            <h1 class="text-left">Summary: Latitude Stats</h1>
-            <hr class="my-4">
-            <img src="assets/images/Lat_V_Temp.png">
-            <p>On this webpage you will view graphs I previously did which showed data on five hundred cities across the
-                world and provided four different types of data including temperature, wind speed, humidity, and
-                cloudiness of each city in different regions. I created four graphs showing the correlation of Latitude
-                vs temperature, cloudiness, humidity, and wind speed. My findings showed all but one had no correlation
-                between latitude. Latitude and temperature had a correlation. As you go through this webpage you can
-                view every graph and a description of my findings. Data from all five hundred cities can be viewed.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Latitude Vs X</h1>
+
+                <hr>
+
+                <h2>Please click a plot to get an in depth detail.</h2>
 
 
+                <hr>
 
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-            <h1 class="text-left">Visualizations</h1>
-            <hr class="my-4">
-            <a href="temperature.html"><img class="Panel" src="assets/images/Lat_V_Temp.png"
-                    class="rounded float-left thumbnail" alt="Latitude Vs. Temperature"></a>
-            <a href="cloudiness.html"><img class="Panel" src="assets/images/Lat_V_Cloudiness.png"
-                    class="rounded float-left thumbnail" alt="Latitude Vs. Cloudiness"></a>
-            <a href="humid.html"><img class="Panel" src="assets/images/Lat_V_Humid.png"
-                    class="rounded float-left thumbnail" alt="Latitude Vs. Humid"></a>
-            <a href="wind_speed.html"><img class="Panel" src="assets/images/Lat_V_Wind Speed.png"
-                    class="rounded float-left thumbnail" alt="Latitude Vs. Wind Speed"></a>
+            </div>
 
         </div>
-    </div>
-    </div>
 
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>VS. Cloudiness</h3><a href="cloudiness.html"><img src="assets/images/Lat_V_Cloudiness.png"></a>
+            </div>
+
+            <div class="col-md-6">
+                <h3>VS. Humid</h3><a href="humid.html"><img src="assets/images/Lat_V_Humid.png"></a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 blue">
+                <h3>VS. Temperature</h3><a href="temperature.html"><img src="assets/images/Lat_V_Temp.png"></a>
+            </div>
+
+            <div class="col-md-6">
+                <h3>VS. Wind Speed</h3><a href="wind_speed.html"><img src="assets/images/Lat_V_Wind Speed.png"></a>
+            </div>
+
+        </div>
+
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
